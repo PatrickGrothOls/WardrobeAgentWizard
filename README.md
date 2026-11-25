@@ -1,5 +1,10 @@
 # WardrobeAgentWizard Skill
 
+[![Start your wardrobe in your AI agent](docs/images/start-in-your-ai.svg)](https://patrickgrothols.github.io/WardrobeAgentWizard/#start)
+
+[See the real build](https://patrickgrothols.github.io/WardrobeAgentWizard/)
+· [Explore the 3D model](https://patrickgrothols.github.io/WardrobeAgentWizard/model.html)
+
 **Want to use it yourself?** Paste this starter prompt into your AI application:
 
 ```text
@@ -26,8 +31,8 @@ design previews.*
 
 ### Explore the real model
 
-[Open the assembled wardrobe](https://patrickgrothols.github.io/WardrobeAgentWizard/) ·
-[Explore the exploded view](https://patrickgrothols.github.io/WardrobeAgentWizard/?view=exploded)
+[Open the assembled wardrobe](https://patrickgrothols.github.io/WardrobeAgentWizard/model.html) ·
+[Explore the exploded view](https://patrickgrothols.github.io/WardrobeAgentWizard/model.html?view=exploded)
 
 Zoom in to see the machining details. The viewer’s 84 wood-textured panels preserve the
 actual holes, pockets and grooves from the CAD model. Toggle the doors to see
@@ -36,11 +41,11 @@ Cabineo connector bodies are omitted. Some fixings use simplified geometry from
 the source assembly. The doors have plain applied frames and slim brass handle
 concepts; their attachment and additional clearance remain unqualified. This example is not a fabrication release.
 
-[![Close-up of a machined side panel showing shelf drilling, connector pockets and hinge plates.](docs/images/wardrobe-cad.png)](https://patrickgrothols.github.io/WardrobeAgentWizard/)
+[![Close-up of a machined side panel showing shelf drilling, connector pockets and hinge plates.](docs/images/wardrobe-cad.png)](https://patrickgrothols.github.io/WardrobeAgentWizard/model.html)
 
 Toggle **Show doors** to inspect the proposed applied frames and brass handles.
 
-[![Wooden framed doors with brass pulls following the wardrobe’s sloped outline.](docs/images/wardrobe-framed.png)](https://patrickgrothols.github.io/WardrobeAgentWizard/)
+[![Wooden framed doors with brass pulls following the wardrobe’s sloped outline.](docs/images/wardrobe-framed.png)](https://patrickgrothols.github.io/WardrobeAgentWizard/model.html)
 
 ## From the whole cabinet to every part
 
@@ -53,7 +58,7 @@ design code.
 
 *The same wardrobe, expanded into its component parts.*
 
-[Open the interactive exploded model](https://patrickgrothols.github.io/WardrobeAgentWizard/?view=exploded).
+[Open the interactive exploded model](https://patrickgrothols.github.io/WardrobeAgentWizard/model.html?view=exploded).
 Panels are separated for inspection; the view does not specify an assembly sequence.
 
 ## From measurements to cutting and assembly
