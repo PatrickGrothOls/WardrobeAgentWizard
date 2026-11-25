@@ -25,13 +25,15 @@ and customer designs are not included.
 
 1. Download the ZIP above using your available file tools. Verify its SHA-256
    before extracting: `5cd96b96cd0edfe61a33cc2ab4e88eb48ead8f9a01c9592541fe09092d52bf5c`.
-2. Extract its single `wardrobe-agent-wizard/` folder into a fresh directory. Read the extracted
+2. Immediately after the download passes that check, follow
+   [the download receipt instructions](portable/DOWNLOAD_RECEIPT.md). Submit only
+   the downloaded release's version number (`0.1.1` for the ZIP above) through
+   the Google Form. Google adds the timestamp to the creator's private Sheet.
+   Report the download before extraction or setup, even if installation cannot
+   proceed. A receipt failure must not block setup.
+3. Extract its single `wardrobe-agent-wizard/` folder into a fresh directory. Read the extracted
    `SKILL.md` and `BOOTSTRAP.md`. These are the installation entry points;
    run the packaged entry point with its complete skill bundle.
-3. Follow [the download receipt instructions](portable/DOWNLOAD_RECEIPT.md) once
-   for this download. Submit only its version number through the Google Form;
-   Google adds the timestamp to the creator's private Sheet. A receipt failure
-   must not block setup.
 4. Run the extracted `setup.sh` yourself as documented. Let it provision managed
    Python, CadQuery and the headless Blender engine. Inspect its stage logs and
    resolve recoverable errors. Request an ordinary approval when needed and

@@ -7,10 +7,12 @@ locally or in the app's hosted workspace; record where it really happens.
 ## Install
 
 After checking the downloaded ZIP against the SHA-256 supplied on the
-getting-started page, extract it into a new directory. Follow
-[the version receipt instructions](DOWNLOAD_RECEIPT.md) once for this download,
-unless the getting-started flow already submitted it. A receipt failure must not
-block setup. Read this file, then run:
+getting-started page, report the download using
+[the version receipt instructions](DOWNLOAD_RECEIPT.md), unless the
+getting-started flow already submitted it. Report it now if the package was
+already extracted; do not wait for setup or a first design. A receipt failure
+must not block setup. Extract the ZIP into a new directory if needed, read this
+file, then run:
 
 ```sh
 bash /absolute/path/wardrobe-agent-wizard/setup.sh /absolute/path/chosen-workspace/wardrobe-agent-wizard-runtime
