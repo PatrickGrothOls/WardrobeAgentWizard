@@ -1,34 +1,71 @@
 <!doctype html>
-<!-- Scope: Public, read-only WardrobeAgentWizard machining showcase and accessible controls. -->
+<!-- Scope: Introduce the real wardrobe project and hand visitors into their own AI agent. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore a real WardrobeAgentWizard wardrobe in 3D: assembled panels, exploded construction and actual machining details.">
-  <title>WardrobeAgentWizard — Inside the build</title>
-  <script type="module" crossorigin src="./assets/index-CzsZk6CG.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-B1LfOADa.css">
+  <meta name="description" content="Give your AI agent the instructions to design a fitted wardrobe for your space, from measurements to 3D models and part files.">
+  <meta name="theme-color" content="#062746">
+  <meta property="og:title" content="Your space. Your wardrobe. Your AI.">
+  <meta property="og:description" content="A real wardrobe, designed through AI and cut on a CNC. Start your own project inside your AI agent.">
+  <meta property="og:image" content="https://patrickgrothols.github.io/WardrobeAgentWizard/wardrobe-built.webp">
+  <title>WardrobeAgentWizard | Your AI. Your fitted wardrobe.</title>
+  <script type="module" crossorigin src="./assets/home-yJuyBTIR.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+  <link rel="stylesheet" crossorigin href="./assets/home-DIQnjNUN.css">
 </head>
 <body>
-  <header><a class="brand" href="https://github.com/PatrickGrothOls/WardrobeAgentWizard">Wardrobe<wbr>AgentWizard<span>Inside the build</span></a>
-    <a class="repo-link" href="https://github.com/PatrickGrothOls/WardrobeAgentWizard#try-a-first-project">Get the skill <span aria-hidden="true">↗</span></a></header>
-  <main>
-    <section class="intro"><p class="eyebrow">From design to cut parts</p>
-      <h1>A wardrobe. Down to the last cut.</h1>
-      <p>Zoom in to see the machining details.</p></section>
-    <section class="viewer" aria-label="Interactive wardrobe model">
-      <div class="toolbar"><div class="poses" role="group" aria-label="Model view">
-        <button data-pose="assembled" aria-pressed="true" disabled>Assembled</button>
-        <button data-pose="exploded" aria-pressed="false" disabled>Exploded</button>
-      </div><button id="fit" class="quiet" disabled>Reset view</button></div>
-      <div id="stage" aria-label="Rotate the model by dragging; pinch or scroll to zoom">
-        <div id="status" role="status" aria-live="polite">Loading the wardrobe and hardware…</div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="shell topbar">
+    <a class="brand" href="./" aria-label="WardrobeAgentWizard home"><span class="brand-mark" aria-hidden="true">W</span>Wardrobe<wbr>AgentWizard</a>
+    <nav aria-label="Main"><a href="./model.html">Explore the model</a><a href="https://github.com/PatrickGrothOls/WardrobeAgentWizard">GitHub</a></nav>
+  </header>
+  <main id="main">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A real build. A skill for your AI.</p>
+        <h1 id="hero-title">Your space.<br>Your wardrobe.<br><span>Your AI.</span></h1>
+        <p class="lead">Give your AI agent the instructions to design a fitted wardrobe for your room.</p>
+        <div class="actions"><a class="button primary" href="#start">Start in your AI</a><a class="text-link" href="#the-build">See the real build</a></div>
+        <p class="small">Free for personal use. Your AI application may require a paid plan.</p>
       </div>
-      <div class="viewer-footer"><label><input id="doors" type="checkbox" disabled> Show doors</label>
-        <label><input id="lighting" type="checkbox" checked disabled> Interior lighting</label>
-        <p id="caption">101 panel pieces + 511 hardware components · door panels hidden</p>
-        <span class="gesture">Drag to rotate · pinch or scroll to zoom</span></div>
+      <figure class="hero-photo">
+        <img src="./assets/wardrobe-built-BaRaA7mV.webp" width="900" height="1200" fetchpriority="high" alt="The finished white wardrobe, fitted beneath a sloped ceiling and filled with clothes, games and toys.">
+        <figcaption><span class="evidence-label">The finished wardrobe</span><span>My daughter's room, Copenhagen</span></figcaption>
+      </figure>
     </section>
-    <p class="note">Real CAD geometry, including the machining. Wood grain shows the proposed finish. LED glow is illustrative; interior light spill is shown with doors hidden in the assembled view. Hardware included except Cabineos; some fixings use simplified source geometry. The applied frames and brass handles are appearance proposals; fit and attachment remain unverified.</p>
+    <section class="proof-band" aria-label="How it works"><div class="shell proof-flow"><span>You describe the space</span><span>Your AI creates the design</span><span>You make it real</span></div></section>
+    <section class="shell build-section" id="the-build" aria-labelledby="build-title">
+      <div class="section-intro"><p class="eyebrow">From an awkward nook to a real wardrobe</p><h2 id="build-title">It started with<br>too many toys.</h2><p>I needed a wardrobe for my daughter's room. I didn't know how to design one. So I worked through AI to create the 3D models and the files for a CNC.</p></div>
+      <div class="build-grid">
+        <figure><img src="./assets/room-before-DFvwnW9_.webp" width="900" height="1200" loading="lazy" alt="The same room before the wardrobe, with toys and games crowding shelves above a desk."><figcaption>The space I started with.</figcaption></figure>
+        <figure><img src="./assets/flatpack-C7hN_3QH.webp" loading="lazy" alt="The cut cabinet panels laid out flat on the floor at home."><figcaption>A flat pack, straight from the design.</figcaption></figure>
+        <div class="build-note"><span class="corner-mark" aria-hidden="true">+</span><h3>Then it had<br>to fit.</h3><p>The parts were cut at Maker in Copenhagen. I assembled and painted them at home. The wardrobe in the photo is the result.</p><p>I turned the tools and instructions into WardrobeAgentWizard so other people could try it with their own AI.</p><a class="text-link" href="#start">Try your own space</a></div>
+      </div>
+    </section>
+    <section class="design-section" aria-labelledby="design-title"><div class="shell design-grid">
+      <div><p class="eyebrow">Look inside the design</p><h2 id="design-title">A design you<br>can inspect.</h2><p>Rotate a detailed example, separate the panels and zoom in on the machining.</p><a class="button outline" href="./model.html">Open the 3D viewer</a><p class="small">A separate digital example. Proposed finishes and fittings are explained in the viewer.</p></div>
+      <a class="digital-preview" href="./model.html" aria-label="Explore the digital wardrobe model"><img src="./assets/wardrobe-digital-D47Me2vp.webp" loading="lazy" alt="Digital wardrobe example with visible shelves, drawers, hinges and interior lighting."><span>Explore the model</span></a>
+    </div></section>
+    <section class="shell start-section" id="start" aria-labelledby="start-title">
+      <div class="section-intro"><p class="eyebrow">Keep working with your own AI</p><h2 id="start-title">Give your agent<br>a new skill.</h2><p>Start a fresh chat with the prompt below. Your agent follows the setup instructions, then guides you through your room and design.</p></div>
+      <div class="start-panel">
+        <div class="start-heading"><h3>Start your wardrobe</h3><span class="tag">Inside your AI agent</span></div>
+        <p>Use an AI work environment that can download files and run commands. It may ask you to approve setup or folder access.</p>
+        <div class="agent-actions"><a id="desktop-launch" class="button primary" href="#starter-prompt">Open in ChatGPT desktop</a><button class="button secondary" id="copy-prompt" type="button">Copy starter prompt</button></div>
+        <p class="small">The desktop link fills a new chat. Press Send to begin. For Claude Cowork, Codex or another compatible agent, copy and paste the prompt.</p>
+        <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+        <details id="prompt-details"><summary>Read or select the starter prompt</summary><label class="visually-hidden" for="starter-prompt">Starter prompt</label><textarea id="starter-prompt" readonly rows="5">Set up WardrobeAgentWizard Skill and help me design my furniture. Go to https://github.com/PatrickGrothOls/WardrobeAgentWizard and follow the getting-started instructions. Handle the setup and ask me for any necessary approvals.</textarea></details>
+        <p class="small">Setup currently supports macOS Apple Silicon and Linux x86-64, including hosted workspaces. Native Windows isn't supported. Allow about 4 GB free plus project space.</p>
+        <a class="text-link" href="https://github.com/PatrickGrothOls/WardrobeAgentWizard/blob/main/START_HERE.md">Setup details and current limitations</a>
+      </div>
+    </section>
+    <section class="shell questions" aria-labelledby="questions-title"><h2 id="questions-title">Before you start</h2>
+      <details><summary>What will the skill create?</summary><p>The workflow covers measured-space intake, 3D design, part files, supported hardware machining and cutting information. Your agent works through checks and asks for missing measurements or workshop information. A picture alone is not a manufacturing release.</p></details>
+      <details><summary>Do I need a CNC at home?</summary><p>No. You need a workshop or supplier that can cut the parts. My build used the CNC at Maker in Copenhagen. Your machine, materials and manufacturing files must be checked before cutting.</p></details>
+      <details><summary>Is it free?</summary><p>The skill is free for personal, noncommercial projects. Your AI subscription, materials, hardware and workshop time are separate. Commercial use requires a separate licence.</p></details>
+      <details><summary>Can I look at the code?</summary><p>Yes. The instructions and construction tools are <a href="https://github.com/PatrickGrothOls/WardrobeAgentWizard">in the GitHub repository</a>. Technical users can start there directly.</p></details>
+    </section>
   </main>
+  <footer class="shell"><p>WardrobeAgentWizard<br><span>A project by Patrick Groth Olsen.</span></p><div><a href="https://github.com/PatrickGrothOls/WardrobeAgentWizard">Source on GitHub</a><a href="https://github.com/PatrickGrothOls/WardrobeAgentWizard/blob/main/LICENSE.md">Licence</a></div></footer>
 </body>
 </html>
