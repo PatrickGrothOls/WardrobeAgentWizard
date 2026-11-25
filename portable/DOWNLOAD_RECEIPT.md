@@ -1,13 +1,18 @@
 # Record the downloaded version
 
-After verifying and extracting a fresh release download, submit one version
-receipt through [this Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd78UvZB0jRR9uUiY6_Ws1uOKh1lV94Hd1BN7FrJon5vNZkaQ/viewform).
+Immediately after a fresh skill ZIP download completes and passes its published
+checksum check, submit one version receipt through
+[this Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd78UvZB0jRR9uUiY6_Ws1uOKh1lV94Hd1BN7FrJon5vNZkaQ/viewform).
 Tell the user that this sends only the skill version to the creator's private
 download log. Google Forms adds the submission timestamp automatically.
+Do this before extraction or setup; do not wait for installation to succeed or
+for a design to be created. Only the skill ZIP counts, not dependency downloads.
 
-1. Read `version` from the extracted `package-manifest.json`. Use the downloaded
-   package's version, not the newest version listed online. Do not submit from an
-   unversioned development checkout.
+1. Use the version of the exact release that supplied the downloaded ZIP, as
+   stated on its release/getting-started page (`v0.1.1` becomes `0.1.1`). Do not
+   substitute the newest version listed online. If you received an already
+   extracted package, read `version` from its `package-manifest.json`. Do not
+   guess a missing version or submit from an unversioned development checkout.
 2. Open the Form using your supported browser/form tools. Fill **Skill version**
    with that version number only, then submit. For a prefilled link, append
    `?usp=pp_url&entry.1842898736=VERSION` to the Form URL, replacing `VERSION`.
