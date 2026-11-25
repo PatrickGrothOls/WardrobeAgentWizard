@@ -6,6 +6,12 @@ export default defineConfig({
   root: fileURLToPath(new URL("./showcase", import.meta.url)),
   base: "./",
   build: {
+    rollupOptions: {
+      input: {
+        home: fileURLToPath(new URL("./showcase/index.html", import.meta.url)),
+        model: fileURLToPath(new URL("./showcase/model.html", import.meta.url)),
+      },
+    },
     outDir: fileURLToPath(new URL("./showcase-dist", import.meta.url)),
     emptyOutDir: true,
     license: {fileName: "THIRD_PARTY_LICENSES.md"},
