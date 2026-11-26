@@ -1,15 +1,13 @@
-/* Scope: Shared type, surface materials, controls and accessible document defaults. */
+/* Scope: Shared type, flat controls and accessible document defaults. */
 :root {
   --paper:#f5f5f7; --surface:#fff; --ink:#1d1d1f; --muted:#626268; --accent:#0066cc; --rule:#dedee3;
   --xs:.5rem; --sm:.8125rem; --md:1.3125rem; --lg:2.125rem; --xl:3.4375rem; --xxl:5.5625rem;
-  --radius:1.3125rem; --radius-lg:2.125rem; --display:calc(3.4375rem * 1.272); --section-title:calc(2.125rem * 1.272);
-  --photo-shadow:0 34px 89px -34px #1d263c42,0 8px 21px -13px #1d263c2e;
-  --surface-shadow:0 21px 55px -34px #1d263c26,inset 0 1px 0 #ffffff;
+  --display:calc(3.4375rem * 1.272); --section-title:calc(2.125rem * 1.272);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--paper); font-synthesis:none;
 }
 * { box-sizing:border-box; }
 html { scroll-padding-top:var(--xxl); }
-body { margin:0; font-size:1.125rem; line-height:1.5; -webkit-font-smoothing:antialiased; }
+body { margin:0; background:var(--surface); font-size:1.125rem; line-height:1.5; -webkit-font-smoothing:antialiased; }
 a { color:inherit; text-underline-offset:.25em; }
 button,textarea { font:inherit; }
 button,a,summary { -webkit-tap-highlight-color:transparent; }
@@ -26,10 +24,10 @@ h3 { font-size:1.625rem; margin-bottom:var(--md); }
 .small,figcaption { font-size:.875rem; line-height:1.5; overflow-wrap:anywhere; }
 .small { color:var(--muted); }
 .actions { display:flex; align-items:center; flex-wrap:wrap; gap:var(--md); }
-.button { display:inline-flex; align-items:center; justify-content:center; min-height:3.4375rem; padding:var(--sm) var(--lg); border:1px solid transparent; border-radius:3.4375rem; font-size:1rem; font-weight:500; text-decoration:none; cursor:pointer; text-align:center; line-height:1.4; transition:background-color .21s,box-shadow .21s; }
-.primary { color:#fff; background:linear-gradient(#36363a,#1d1d1f); box-shadow:inset 0 1px 0 #ffffff26,0 8px 13px -8px #1d1d1f66; }
-.primary:hover { background:#36363a; box-shadow:inset 0 1px 0 #ffffff26,0 8px 21px -8px #1d1d1f66; }
-.secondary { color:var(--ink); border-color:#8e8e93; background:var(--surface); }
+.button { display:inline-flex; align-items:center; justify-content:center; min-height:3.4375rem; padding:var(--sm) var(--lg); border:1px solid transparent; border-radius:3.4375rem; font-size:1rem; font-weight:500; text-decoration:none; cursor:pointer; text-align:center; line-height:1.4; transition:background-color .21s; }
+.primary { color:#fff; background:var(--ink); }
+.primary:hover { background:#36363a; }
+.secondary { color:var(--ink); border-color:#8e8e93; background:transparent; }
 .secondary:hover { background:var(--paper); }
 .text-link { display:inline-flex; align-items:center; min-height:3.4375rem; color:var(--accent); text-decoration:none; font-size:1rem; font-weight:500; }
 .text-link:hover { text-decoration:underline; }
