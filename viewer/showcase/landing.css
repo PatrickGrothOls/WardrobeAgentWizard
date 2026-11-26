@@ -36,6 +36,7 @@ h1 span { display:block; white-space:nowrap; }
 .model-section { background:var(--sage); padding-block:var(--xxl); }
 .model-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.618fr); align-items:center; gap:var(--xl); }
 .model-image { display:block; }
+.model-copy { --accent-text:#8f2416; }
 .model-copy>p:not(.eyebrow) { margin-top:var(--lg); max-width:30ch; }
 .model-copy .text-link { margin-top:var(--md); }
 .model-copy .small { margin-top:var(--lg); color:#354238; }
