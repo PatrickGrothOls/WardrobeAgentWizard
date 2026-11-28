@@ -10,6 +10,7 @@ nav a:hover { color:var(--accent); }
 .hero-photo img { width:100%; height:auto; }
 .hero-copy { position:static; width:auto; padding:var(--lg) var(--md); text-align:center; }
 .hero h1 { font-size:clamp(2.625rem,6vw,3.4375rem); font-weight:400; line-height:1.18; letter-spacing:-.025em; }
+.hero-tagline { display:block; margin-top:var(--sm); font-size:var(--md); line-height:1.4; letter-spacing:0; }
 .hero .actions { justify-content:center; margin-top:var(--lg); }
 .hero .launch-hint { margin-top:var(--sm); color:var(--ink); }
 .hero .text-link { margin-top:var(--xs); color:var(--ink); font-size:.875rem; text-decoration:underline; }
