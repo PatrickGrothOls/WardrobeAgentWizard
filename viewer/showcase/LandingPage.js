@@ -14,8 +14,10 @@ export class LandingPage {
     }
     this.prompt = this.document.querySelector("#starter-prompt");
     this.status = this.document.querySelector("#copy-status");
-    this.document.querySelector("#desktop-launch").href =
-      `codex://new?prompt=${encodeURIComponent(this.prompt.value)}`;
+    const launchUrl = `codex://new?prompt=${encodeURIComponent(this.prompt.value)}`;
+    this.document.querySelectorAll("[data-prompt-launch]").forEach(link => {
+      link.href = launchUrl;
+    });
     this.document.querySelector("#copy-prompt").addEventListener("click", () => this.copy());
   }
 
