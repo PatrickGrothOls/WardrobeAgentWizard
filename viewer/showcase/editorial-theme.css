@@ -1,6 +1,7 @@
 /* Scope: Shared type, flat controls and accessible document defaults. */
 :root {
-  --paper:#f5f5f7; --surface:#fff; --ink:#1d1d1f; --muted:#626268; --accent:#0066cc; --rule:#dedee3;
+  --paper:#f5f5f7; --surface:#fff; --ink:#1d1d1f; --muted:#626268; --accent:#91452f; --rule:#dedee3;
+  --claude:#d97757; --claude-hover:#e38b6d;
   --xs:.5rem; --sm:.8125rem; --md:1.3125rem; --lg:2.125rem; --xl:3.4375rem; --xxl:5.5625rem;
   --hero-width:min(100%,96rem,calc(100svh * 1168 / 940));
   --display:calc(3.4375rem * 1.272); --section-title:calc(2.125rem * 1.272);
@@ -21,7 +22,8 @@ h2 { font-size:clamp(2.125rem,3vw,var(--section-title)); }
 h3 { font-size:1.625rem; margin-bottom:var(--md); }
 .shell { width:min(calc(100% - 2 * var(--xl)),96rem); margin-inline:auto; }
 .brand { font-size:1.3125rem; font-weight:600; letter-spacing:-.045em; text-decoration:none; line-height:1; overflow-wrap:anywhere; }
-.eyebrow { font-size:.875rem; line-height:1.4; letter-spacing:.025em; font-weight:600; color:var(--muted); margin-bottom:var(--md); }
+.eyebrow { font-size:.875rem; line-height:1.4; letter-spacing:.025em; font-weight:600; color:var(--accent); margin-bottom:var(--md); }
+.accent { color:var(--accent); }
 .small,figcaption { font-size:.875rem; line-height:1.5; overflow-wrap:anywhere; }
 .small { color:var(--muted); }
 .actions { display:flex; align-items:center; flex-wrap:wrap; gap:var(--md); }
