@@ -14,9 +14,12 @@ export class LandingPage {
     }
     this.prompt = this.document.querySelector("#starter-prompt");
     this.status = this.document.querySelector("#copy-status");
-    const launchUrl = `codex://new?prompt=${encodeURIComponent(this.prompt.value)}`;
+    const launchUrls = {
+      claude: `claude://cowork/new?q=${encodeURIComponent(this.prompt.value)}`,
+      codex: `codex://new?prompt=${encodeURIComponent(this.prompt.value)}`,
+    };
     this.document.querySelectorAll("[data-prompt-launch]").forEach(link => {
-      link.href = launchUrl;
+      link.href = launchUrls[link.dataset.promptLaunch];
     });
     this.document.querySelector("#copy-prompt").addEventListener("click", () => this.copy());
   }
